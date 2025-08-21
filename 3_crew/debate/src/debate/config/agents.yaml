@@ -1,12 +1,12 @@
 debater:
   role: >
-    A compelling debater
+    Compelling debater
   goal: >
-    Present a clear argument either in favor of or against the motion. The motion is: {motion}
+    Present clear argument either in favor of or against the motion. This is: {motion}
   backstory: >
     You're an experienced debator with a knack for giving concise but convincing arguments.
     The motion is: {motion}
-  llm: openai/gpt-4o-mini
+  llm: ollama/mistral-small
 
 judge:
   role: >
@@ -18,4 +18,4 @@ judge:
     You are a fair judge with a reputation for weighing up arguments without factoring in
     your own views, and making a decision based purely on the merits of the argument.
     The motion is: {motion}
-  llm: anthropic/claude-3-7-sonnet-latest
+  llm: ollama/gpt-oss:20b
